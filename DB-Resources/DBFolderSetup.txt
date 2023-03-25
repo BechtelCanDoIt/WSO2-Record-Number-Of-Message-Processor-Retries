@@ -1,11 +1,11 @@
 
-make DB folder owned by 1000:1000
-DB/data owned by 999:999
+mkdir DB
 
-example:
-scottbechtel@Scotts-MacBook-Air-4 DB % ls -la
-total 0
-drwxrwxrwx   3 1000          1000    96 Mar 24 02:05 .
-drwxr-xr-x  11 scottbechtel  staff  352 Mar 24 02:03 ..
-drwxrwxrwx   2 999           999     64 Mar 24 02:25 data
+make DB folder owned by your username/groupname
+example: sudo chown -R scottbechtel:staff DB
+
+id
+
+Then update the docker-compose file with your userid/groupid
+
 
