@@ -1,0 +1,23 @@
+<data name="DemoStatsDS" baseURI="http://ws.wso2.org/dataservice/demostatsds" serviceNamespace="http://wso2.org/dataservice" enableBatchRequests="false" enableBoxcarring="false" serviceStatus="active" transports="http https" serviceGroup="com.wso2.mpretries.ds">
+  <config id="default">
+    <property name="carbon_datasource_name">MyDemoConnection</property>
+  </config>
+  <query id="insertDemoStatsSQL" useConfig="default">
+    <sql>INSERT INTO demo.demostats (correlation_id,  retry_count, mp_name, mp_isdisabled, is_success) VALUES (:correlation_id, :retry_count, :mp_name, :mp_isdisabled, :is_success)</sql>
+    <param name="correlation_id" sqlType="STRING" />
+    <param name="retry_count" sqlType="INTEGER" />
+    <param name="mp_name" sqlType="STRING" />
+    <param name="mp_isdisabled" sqlType="STRING" />
+    <param name="is_success" sqlType="STRING" />
+  </query>
+  <operation name="insertDemoStats" returnRequestStatus="true">
+    <description>Operation to call SQL Query</description>
+    <call-query href="insertDemoStatsSQL">
+      <with-param name="correlation_id" query-param="correlation_id" />
+      <with-param name="retry_count" query-param="retry_count" />
+      <with-param name="mp_name" query-param="mp_name" />
+      <with-param name="mp_isdisabled" query-param="mp_isdisabled" />
+      <with-param name="is_success" query-param="is_success" />
+    </call-query>
+  </operation>
+</data>

@@ -1,0 +1,3 @@
+curl --location 'http://mimain:8290/process' \
+--header 'Content-Type: application/json' \
+--data '{"msg":"test"}'

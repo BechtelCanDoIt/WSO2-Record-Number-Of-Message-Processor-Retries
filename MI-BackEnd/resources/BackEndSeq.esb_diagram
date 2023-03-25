@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:esb="http:///org/wso2/integrationstudio/eclipse/gmf/esb" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmi:id="_Fq1cQMj7Ee222fVYJwU18w" type="Esb" name="BackEndSeq" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_FsBIAMj7Ee222fVYJwU18w" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_FsELUMj7Ee222fVYJwU18w" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_L54YcMj7Ee222fVYJwU18w" type="3614">
+        <children xmi:type="notation:Node" xmi:id="_L6AUQMj7Ee222fVYJwU18w" type="3615">
+          <children xmi:type="notation:DecorationNode" xmi:id="_L6A7UMj7Ee222fVYJwU18w" type="7035">
+            <children xmi:type="notation:Node" xmi:id="_L6y-cMj7Ee222fVYJwU18w" type="3492">
+              <children xmi:type="notation:DecorationNode" xmi:id="_L6y-dcj7Ee222fVYJwU18w" type="5167"/>
+              <children xmi:type="notation:Node" xmi:id="_L7AZ0Mj7Ee222fVYJwU18w" type="3033">
+                <styles xmi:type="notation:DescriptionStyle" xmi:id="_L7AZ0cj7Ee222fVYJwU18w"/>
+                <styles xmi:type="notation:FontStyle" xmi:id="_L7AZ0sj7Ee222fVYJwU18w" fontName=".AppleSystemUIFont"/>
+                <styles xmi:type="notation:LineStyle" xmi:id="_L7AZ08j7Ee222fVYJwU18w"/>
+                <element xmi:type="esb:PropertyMediatorInputConnector" href="BackEndSeq.esb#//@server/@children.0/@mediatorFlow/@children.0/@inputConnector"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L7AZ1Mj7Ee222fVYJwU18w" x="-6" y="-5"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_L7BA4Mj7Ee222fVYJwU18w" type="3034">
+                <styles xmi:type="notation:DescriptionStyle" xmi:id="_L7BA4cj7Ee222fVYJwU18w"/>
+                <styles xmi:type="notation:FontStyle" xmi:id="_L7BA4sj7Ee222fVYJwU18w" fontName=".AppleSystemUIFont"/>
+                <styles xmi:type="notation:LineStyle" xmi:id="_L7BA48j7Ee222fVYJwU18w"/>
+                <element xmi:type="esb:PropertyMediatorOutputConnector" href="BackEndSeq.esb#//@server/@children.0/@mediatorFlow/@children.0/@outputConnector"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L7BA5Mj7Ee222fVYJwU18w" x="64" y="-9"/>
+              </children>
+              <styles xmi:type="notation:DescriptionStyle" xmi:id="_L6y-ccj7Ee222fVYJwU18w"/>
+              <styles xmi:type="notation:FontStyle" xmi:id="_L6y-csj7Ee222fVYJwU18w" fontName=".AppleSystemUIFont"/>
+              <styles xmi:type="notation:LineStyle" xmi:id="_L6y-c8j7Ee222fVYJwU18w"/>
+              <element xmi:type="esb:PropertyMediator" href="BackEndSeq.esb#//@server/@children.0/@mediatorFlow/@children.0"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L6y-dMj7Ee222fVYJwU18w" x="25" y="89" width="84" height="115"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_L7SGoMj7Ee222fVYJwU18w" type="3495">
+              <children xmi:type="notation:DecorationNode" xmi:id="_L7SGpcj7Ee222fVYJwU18w" type="5168"/>
+              <children xmi:type="notation:Node" xmi:id="_L7VxAMj7Ee222fVYJwU18w" type="3018">
+                <styles xmi:type="notation:DescriptionStyle" xmi:id="_L7VxAcj7Ee222fVYJwU18w"/>
+                <styles xmi:type="notation:FontStyle" xmi:id="_L7VxAsj7Ee222fVYJwU18w" fontName=".AppleSystemUIFont"/>
+                <styles xmi:type="notation:LineStyle" xmi:id="_L7VxA8j7Ee222fVYJwU18w"/>
+                <element xmi:type="esb:LogMediatorInputConnector" href="BackEndSeq.esb#//@server/@children.0/@mediatorFlow/@children.1/@inputConnector"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L7VxBMj7Ee222fVYJwU18w" x="-6" y="-5"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_L7WYEMj7Ee222fVYJwU18w" type="3019">
+                <styles xmi:type="notation:DescriptionStyle" xmi:id="_L7WYEcj7Ee222fVYJwU18w"/>
+                <styles xmi:type="notation:FontStyle" xmi:id="_L7WYEsj7Ee222fVYJwU18w" fontName=".AppleSystemUIFont"/>
+                <styles xmi:type="notation:LineStyle" xmi:id="_L7WYE8j7Ee222fVYJwU18w"/>
+                <element xmi:type="esb:LogMediatorOutputConnector" href="BackEndSeq.esb#//@server/@children.0/@mediatorFlow/@children.1/@outputConnector"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L7WYFMj7Ee222fVYJwU18w" x="64" y="-9"/>
+              </children>
+              <styles xmi:type="notation:DescriptionStyle" xmi:id="_L7SGocj7Ee222fVYJwU18w"/>
+              <styles xmi:type="notation:FontStyle" xmi:id="_L7SGosj7Ee222fVYJwU18w" fontName=".AppleSystemUIFont"/>
+              <styles xmi:type="notation:LineStyle" xmi:id="_L7SGo8j7Ee222fVYJwU18w"/>
+              <element xmi:type="esb:LogMediator" href="BackEndSeq.esb#//@server/@children.0/@mediatorFlow/@children.1"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L7SGpMj7Ee222fVYJwU18w" x="149" y="89" width="84" height="115"/>
+            </children>
+            <styles xmi:type="notation:TitleStyle" xmi:id="_L6A7Ucj7Ee222fVYJwU18w" showTitle="true"/>
+          </children>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_L6AUQcj7Ee222fVYJwU18w"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_L6AUQsj7Ee222fVYJwU18w" fontName=".AppleSystemUIFont"/>
+          <styles xmi:type="notation:LineStyle" xmi:id="_L6AUQ8j7Ee222fVYJwU18w"/>
+          <element xmi:type="esb:MediatorFlow" href="BackEndSeq.esb#//@server/@children.0/@mediatorFlow"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L6AURMj7Ee222fVYJwU18w"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_L6A7Usj7Ee222fVYJwU18w" type="3616">
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_L6A7U8j7Ee222fVYJwU18w"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_L6A7VMj7Ee222fVYJwU18w" fontName=".AppleSystemUIFont"/>
+          <styles xmi:type="notation:LineStyle" xmi:id="_L6A7Vcj7Ee222fVYJwU18w"/>
+          <element xmi:type="esb:SequencesInputConnector" href="BackEndSeq.esb#//@server/@children.0/@inputConnector"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L6A7Vsj7Ee222fVYJwU18w" x="-11" y="-9"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_L6A7V8j7Ee222fVYJwU18w" type="3617">
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_L6A7WMj7Ee222fVYJwU18w"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_L6A7Wcj7Ee222fVYJwU18w" fontName=".AppleSystemUIFont"/>
+          <styles xmi:type="notation:LineStyle" xmi:id="_L6A7Wsj7Ee222fVYJwU18w"/>
+          <element xmi:type="esb:SequencesOutputConnector" href="BackEndSeq.esb#//@server/@children.0/@outputConnector"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L6A7W8j7Ee222fVYJwU18w" x="-11" y="-9"/>
+        </children>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_L54Yccj7Ee222fVYJwU18w"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_L54Ycsj7Ee222fVYJwU18w" fontName=".AppleSystemUIFont"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_L54Yc8j7Ee222fVYJwU18w"/>
+        <element xmi:type="esb:Sequences" href="BackEndSeq.esb#//@server/@children.0"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L54YdMj7Ee222fVYJwU18w" width="195" height="125"/>
+      </children>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_FsBIAcj7Ee222fVYJwU18w"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_FsBIAsj7Ee222fVYJwU18w" fontName=".AppleSystemUIFont"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="_FsBIA8j7Ee222fVYJwU18w"/>
+    <element xmi:type="esb:EsbServer" href="BackEndSeq.esb#//@server"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FsBIBMj7Ee222fVYJwU18w"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_Fq1cQcj7Ee222fVYJwU18w"/>
+  <element xmi:type="esb:EsbDiagram" href="BackEndSeq.esb#/"/>
+  <edges xmi:type="notation:Connector" xmi:id="_L7qhIMj7Ee222fVYJwU18w" type="4001" source="_L6A7V8j7Ee222fVYJwU18w" target="_L7AZ0Mj7Ee222fVYJwU18w" roundedBendpointsRadius="5" routing="Rectilinear">
+    <styles xmi:type="notation:FontStyle" xmi:id="_L7qhIcj7Ee222fVYJwU18w" fontName=".AppleSystemUIFont"/>
+    <element xmi:type="esb:EsbLink" href="BackEndSeq.esb#//@server/@children.0/@outputConnector/@outgoingLink"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_L7qhIsj7Ee222fVYJwU18w" points="[6, 9, 0, -1]$[0, 5, -6, -5]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_L7zrEMj7Ee222fVYJwU18w" type="4001" source="_L7BA4Mj7Ee222fVYJwU18w" target="_L7VxAMj7Ee222fVYJwU18w" roundedBendpointsRadius="5" routing="Rectilinear">
+    <styles xmi:type="notation:FontStyle" xmi:id="_L7zrEcj7Ee222fVYJwU18w" fontName=".AppleSystemUIFont"/>
+    <element xmi:type="esb:EsbLink" href="BackEndSeq.esb#//@server/@children.0/@mediatorFlow/@children.0/@outputConnector/@outgoingLink"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_L7zrEsj7Ee222fVYJwU18w" points="[-11, 0, 69, 0]$[-74, 0, 6, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_L738gMj7Ee222fVYJwU18w" type="4001" source="_L7WYEMj7Ee222fVYJwU18w" target="_L6A7Usj7Ee222fVYJwU18w" roundedBendpointsRadius="5" routing="Rectilinear">
+    <styles xmi:type="notation:FontStyle" xmi:id="_L738gcj7Ee222fVYJwU18w" fontName=".AppleSystemUIFont"/>
+    <element xmi:type="esb:EsbLink" href="BackEndSeq.esb#//@server/@children.0/@mediatorFlow/@children.1/@outputConnector/@outgoingLink"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_L738gsj7Ee222fVYJwU18w" points="[-11, -2, 65, 8]$[-65, -9, 11, 1]"/>
+  </edges>
+</notation:Diagram>

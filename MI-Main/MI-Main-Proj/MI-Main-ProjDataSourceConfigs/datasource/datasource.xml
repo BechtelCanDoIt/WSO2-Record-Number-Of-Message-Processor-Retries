@@ -1,0 +1,19 @@
+<datasource>
+  <name>MyDemoConnection</name>
+  <description>MyDemoConnection for capturing Deliver Stats</description>
+  <jndiConfig useDataSourceFactory="true">
+    <name>jdbc/MyDemoDataSource</name>
+  </jndiConfig>
+  <definition type="RDBMS">
+    <configuration>
+      <driverClassName>org.postgresql.Driver</driverClassName>
+      <url>jdbc:postgresql://mimain:5432/mydb?currentSchema=demo</url>
+      <username>myuser</username>
+      <password>mypass</password>
+      <defaultAutoCommit>true</defaultAutoCommit>
+      <testOnBorrow>true</testOnBorrow>
+      <validationQuery>SELECT 1</validationQuery>
+      <validationInterval>30000</validationInterval>
+    </configuration>
+  </definition>
+</datasource>

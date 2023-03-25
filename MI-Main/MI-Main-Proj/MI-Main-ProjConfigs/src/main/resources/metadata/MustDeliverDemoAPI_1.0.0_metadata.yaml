@@ -1,0 +1,11 @@
+---
+key: "MustDeliverDemoAPI-1.0.0"
+name : "MustDeliverDemoAPI"
+displayName : "MustDeliverDemoAPI"
+description: "Sample API"
+version: "1.0.0"
+serviceUrl: "https://{MI_HOST}:{MI_PORT}/process"
+definitionType: "OAS3"
+securityType: "BASIC"
+mutualSSLEnabled: false
+apiId : "null"

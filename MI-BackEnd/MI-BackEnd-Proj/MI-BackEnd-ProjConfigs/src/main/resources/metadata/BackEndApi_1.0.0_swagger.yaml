@@ -1,0 +1,13 @@
+openapi: 3.0.1
+info:
+  title: BackEndApi
+  description: API Definition of BackEndApi
+  version: 1.0.0
+servers:
+- url: http://localhost:8290/process
+paths:
+  /:
+    post:
+      responses:
+        default:
+          description: Default response

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/process" name="BackEndApi" version="1.0.0" version-type="context" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="POST">
+        <inSequence>
+            <property name="messageType" scope="axis2" type="STRING" value="applicaiton/json"/>
+            <log level="custom">
+                <property name="DEBUG" value="Enter API"/>
+                <property expression="$body" name="payload"/>
+            </log>
+            <sequence key="BackEndSeq"/>
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>

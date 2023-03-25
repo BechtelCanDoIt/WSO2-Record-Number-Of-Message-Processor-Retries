@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template name="RecordDeliveryStatusSeq" xmlns="http://ws.apache.org/ns/synapse">
+    <parameter defaultValue="" isMandatory="false" name="MessageID"/>
+    <parameter defaultValue="" isMandatory="false" name="mp_name"/>
+    <parameter defaultValue="" isMandatory="false" name="mp_isDeactivated"/>
+    <parameter defaultValue="" isMandatory="false" name="retry_count"/>
+    <parameter defaultValue="" isMandatory="false" name="isSuccess"/>
+    <sequence>
+        <script description="Default retry to 0 if null" language="js"><![CDATA[var retryCount = mc.getProperty('retry_count');
+   if (retryCount == null) {
+      retryCount = 0;
+   } 
+   mc.setProperty('retry_count', retryCount.toString());]]></script>
+        <log level="custom" separator=",">
+            <property name="Seq_Nam" value="RecordDeliveryStatusSeq"/>
+            <property name="Loc" value="Enter Seq"/>
+            <property expression="$func:MessageID" name="MessageID"/>
+            <property expression="$func:mp_name" name="mp_name"/>
+            <property expression="$func:mp_isDeactivated" name="mp_isDeactivated"/>
+            <property expression="get-property('retry_count')" name="retry_count"/>
+            <property expression="$func:isSuccess" name="isSuccess"/>
+        </log>
+        <payloadFactory description="Create DB payload. We use get-property for retry_count due to the js scope." media-type="xml">
+            <format>
+                <p:insertDemoStats xmlns:p="http://ws.wso2.org/dataservice/demostatsds">
+                    <p:correlation_id>$1</p:correlation_id>
+                    <p:retry_count>$2</p:retry_count>
+                    <p:mp_name>$3</p:mp_name>
+                    <p:mp_isdisabled>$4</p:mp_isdisabled>
+                    <p:is_success>$5</p:is_success>
+                </p:insertDemoStats>
+            </format>
+            <args>
+                <arg evaluator="xml" expression="$func:MessageID"/>
+                <arg evaluator="xml" expression="get-property('retry_count')"/>
+                <arg evaluator="xml" expression="$func:mp_name"/>
+                <arg evaluator="xml" expression="$func:mp_isDeactivated"/>
+                <arg evaluator="xml" expression="$func:isSuccess"/>
+            </args>
+        </payloadFactory>
+        <log description="This is getting sent to the Database." level="full">
+            <property name="DEBUG" value="This is what we are sending to the database, except for this debug statement."/>
+        </log>
+        <dataServiceCall serviceName="DemoStatsDS">
+            <source type="body"/>
+            <target type="body"/>
+        </dataServiceCall>
+        <log level="full" separator=",">
+            <property name="Seq_Nam" value="RecordDeliveryStatusSeq"/>
+            <property name="DEBUG" value="Response back from DSS"/>
+            <property name="Loc" value="Exit Seq"/>
+        </log>
+    </sequence>
+</template>

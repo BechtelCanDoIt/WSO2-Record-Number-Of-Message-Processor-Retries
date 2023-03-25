@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="MustDeliverDemoSuccessSeq" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <enrich>
+        <source clone="true" type="body"/>
+        <target property="payload" type="property"/>
+    </enrich>
+    <log level="custom" separator=",">
+        <property name="Seq_Nam" value="MustDeliverDemoSuccessSeq"/>
+        <property name="Loc" value="Enter Seq"/>
+        <property expression="get-property('MessageID')" name="MessageID"/>
+        <property expression="get-property('payload')" name="Payload"/>
+        <property name="MSG" value="Message successfully delivered to MI-Backend."/>
+    </log>
+    <clone continueParent="true">
+        <target>
+            <sequence>
+                <call-template description="Gather all the properties to write to the database" target="RecordDeliveryStatusSeq">
+                    <with-param name="MessageID" value="{get-property('MessageID')}"/>
+                    <with-param name="mp_name" value="{get-property('mp_name')}"/>
+                    <with-param name="mp_isDeactivated" value="{get-property('mp_isDeactivated')}"/>
+                    <with-param name="retry_count" value="{get-property('retry_count')}"/>
+                    <with-param name="isSuccess" value="true"/>
+                </call-template>
+            </sequence>
+        </target>
+    </clone>
+    <log level="custom" separator=",">
+        <property name="Seq_Nam" value="MustDeliverDemoSuccessSeq"/>
+        <property name="Loc" value="Exit Seq"/>
+    </log>
+</sequence>

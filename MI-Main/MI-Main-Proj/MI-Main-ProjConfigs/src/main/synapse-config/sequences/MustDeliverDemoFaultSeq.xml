@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="MustDeliverDemoFaultSeq" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <log level="custom" separator=",">
+        <property name="Seq_Nam" value="MustDeliverDemoFaultSeq"/>
+        <property name="Loc" value="Enter Seq"/>
+        <property name="MSG" value="Calling RecordDeliverStatusSeq."/>
+    </log>
+    <script language="js"><![CDATA[var retryCount = mc.getProperty('retry_count');
+   if (retryCount == null) {
+      retryCount = 1;
+   } else {
+      retryCount = parseInt(retryCount) + 1;
+   }
+   mc.setProperty('retry_count', retryCount.toString());]]></script>
+    <enrich>
+        <source clone="true" type="body"/>
+        <target property="payload" type="property"/>
+    </enrich>
+    <log level="custom" separator=",">
+        <property name="Seq_Nam" value="MustDeliverDemoFaultSeq"/>
+        <property name="Loc" value="Debugging"/>
+        <property expression="get-property('MessageID')" name="MessageID"/>
+        <property expression="get-property('mp_name')" name="mp_name"/>
+        <property expression="get-property('mp_isDeactivated')" name="mp_isDeactivated"/>
+        <property expression="get-property('retry_count')" name="retry_count"/>
+        <property name="MSG" value="Calling RecordDeliverStatusSeq."/>
+        <property expression="get-property('payload')" name="payload"/>
+    </log>
+    <clone continueParent="true">
+        <target>
+            <sequence>
+                <call-template description="Gather all the properties to write to the database" target="RecordDeliveryStatusSeq">
+                    <with-param name="MessageID" value="{get-property('MessageID')}"/>
+                    <with-param name="mp_name" value="{get-property('mp_name')}"/>
+                    <with-param name="mp_isDeactivated" value="{get-property('mp_isDeactivated')}"/>
+                    <with-param name="retry_count" value="{get-property('retry_count')}"/>
+                    <with-param name="isSuccess" value="false"/>
+                </call-template>
+            </sequence>
+        </target>
+    </clone>
+    <store description="Retry path" messageStore="MustDeliverDemoRetryMS"/>
+    <log level="custom" separator=",">
+        <property name="Seq_Nam" value="MustDeliverDemoFaultSeq"/>
+        <property name="Loc" value="Exit Seq"/>
+    </log>
+</sequence>

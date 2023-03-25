@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:esb="http:///org/wso2/integrationstudio/eclipse/gmf/esb" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmi:id="_6RwNkMqOEe2c1qM7hnKHGg" type="Esb" name="RecordDeliveryFaultSeq" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_6ScxIMqOEe2c1qM7hnKHGg" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_6SdYMMqOEe2c1qM7hnKHGg" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_xTYn8MrcEe2c1qM7hnKHGg" type="3614">
+        <children xmi:type="notation:Node" xmi:id="_xTbrQMrcEe2c1qM7hnKHGg" type="3615">
+          <children xmi:type="notation:DecorationNode" xmi:id="_xTbrRcrcEe2c1qM7hnKHGg" type="7035">
+            <children xmi:type="notation:Node" xmi:id="_xTqUwMrcEe2c1qM7hnKHGg" type="3495">
+              <children xmi:type="notation:DecorationNode" xmi:id="_xTqUxcrcEe2c1qM7hnKHGg" type="5168"/>
+              <children xmi:type="notation:Node" xmi:id="_xTxCcMrcEe2c1qM7hnKHGg" type="3018">
+                <styles xmi:type="notation:DescriptionStyle" xmi:id="_xTxCccrcEe2c1qM7hnKHGg"/>
+                <styles xmi:type="notation:FontStyle" xmi:id="_xTxCcsrcEe2c1qM7hnKHGg" fontName=".AppleSystemUIFont"/>
+                <styles xmi:type="notation:LineStyle" xmi:id="_xTxCc8rcEe2c1qM7hnKHGg"/>
+                <element xmi:type="esb:LogMediatorInputConnector" href="RecordDeliveryFaultSeq.esb#//@server/@children.0/@mediatorFlow/@children.0/@inputConnector"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xTxCdMrcEe2c1qM7hnKHGg" x="-6" y="-5"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_xTxCdcrcEe2c1qM7hnKHGg" type="3019">
+                <styles xmi:type="notation:DescriptionStyle" xmi:id="_xTxCdsrcEe2c1qM7hnKHGg"/>
+                <styles xmi:type="notation:FontStyle" xmi:id="_xTxCd8rcEe2c1qM7hnKHGg" fontName=".AppleSystemUIFont"/>
+                <styles xmi:type="notation:LineStyle" xmi:id="_xTxCeMrcEe2c1qM7hnKHGg"/>
+                <element xmi:type="esb:LogMediatorOutputConnector" href="RecordDeliveryFaultSeq.esb#//@server/@children.0/@mediatorFlow/@children.0/@outputConnector"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xTxCecrcEe2c1qM7hnKHGg" x="64" y="-9"/>
+              </children>
+              <styles xmi:type="notation:DescriptionStyle" xmi:id="_xTqUwcrcEe2c1qM7hnKHGg"/>
+              <styles xmi:type="notation:FontStyle" xmi:id="_xTqUwsrcEe2c1qM7hnKHGg" fontName=".AppleSystemUIFont"/>
+              <styles xmi:type="notation:LineStyle" xmi:id="_xTqUw8rcEe2c1qM7hnKHGg"/>
+              <element xmi:type="esb:LogMediator" href="RecordDeliveryFaultSeq.esb#//@server/@children.0/@mediatorFlow/@children.0"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xTqUxMrcEe2c1qM7hnKHGg" x="25" y="89" width="84" height="115"/>
+            </children>
+            <styles xmi:type="notation:TitleStyle" xmi:id="_xTbrRsrcEe2c1qM7hnKHGg" showTitle="true"/>
+          </children>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_xTbrQcrcEe2c1qM7hnKHGg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_xTbrQsrcEe2c1qM7hnKHGg" fontName=".AppleSystemUIFont"/>
+          <styles xmi:type="notation:LineStyle" xmi:id="_xTbrQ8rcEe2c1qM7hnKHGg"/>
+          <element xmi:type="esb:MediatorFlow" href="RecordDeliveryFaultSeq.esb#//@server/@children.0/@mediatorFlow"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xTbrRMrcEe2c1qM7hnKHGg"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_xTcSUMrcEe2c1qM7hnKHGg" type="3616">
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_xTcSUcrcEe2c1qM7hnKHGg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_xTcSUsrcEe2c1qM7hnKHGg" fontName=".AppleSystemUIFont"/>
+          <styles xmi:type="notation:LineStyle" xmi:id="_xTcSU8rcEe2c1qM7hnKHGg"/>
+          <element xmi:type="esb:SequencesInputConnector" href="RecordDeliveryFaultSeq.esb#//@server/@children.0/@inputConnector"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xTcSVMrcEe2c1qM7hnKHGg" x="-11" y="-9"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_xTcSVcrcEe2c1qM7hnKHGg" type="3617">
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_xTcSVsrcEe2c1qM7hnKHGg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_xTcSV8rcEe2c1qM7hnKHGg" fontName=".AppleSystemUIFont"/>
+          <styles xmi:type="notation:LineStyle" xmi:id="_xTcSWMrcEe2c1qM7hnKHGg"/>
+          <element xmi:type="esb:SequencesOutputConnector" href="RecordDeliveryFaultSeq.esb#//@server/@children.0/@outputConnector"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xTcSWcrcEe2c1qM7hnKHGg" x="-11" y="-9"/>
+        </children>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_xTYn8crcEe2c1qM7hnKHGg"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_xTYn8srcEe2c1qM7hnKHGg" fontName=".AppleSystemUIFont"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_xTYn88rcEe2c1qM7hnKHGg"/>
+        <element xmi:type="esb:Sequences" href="RecordDeliveryFaultSeq.esb#//@server/@children.0"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xTYn9MrcEe2c1qM7hnKHGg" width="195" height="125"/>
+      </children>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_6ScxIcqOEe2c1qM7hnKHGg"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_6ScxIsqOEe2c1qM7hnKHGg" fontName=".AppleSystemUIFont"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="_6ScxI8qOEe2c1qM7hnKHGg"/>
+    <element xmi:type="esb:EsbServer" href="RecordDeliveryFaultSeq.esb#//@server"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6ScxJMqOEe2c1qM7hnKHGg"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_6RwNkcqOEe2c1qM7hnKHGg"/>
+  <element xmi:type="esb:EsbDiagram" href="RecordDeliveryFaultSeq.esb#/"/>
+  <edges xmi:type="notation:Connector" xmi:id="_xT4XMMrcEe2c1qM7hnKHGg" type="4001" source="_xTcSVcrcEe2c1qM7hnKHGg" target="_xTxCcMrcEe2c1qM7hnKHGg" roundedBendpointsRadius="5" routing="Rectilinear">
+    <styles xmi:type="notation:FontStyle" xmi:id="_xT4XMcrcEe2c1qM7hnKHGg" fontName=".AppleSystemUIFont"/>
+    <element xmi:type="esb:EsbLink" href="RecordDeliveryFaultSeq.esb#//@server/@children.0/@outputConnector/@outgoingLink"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_xT4XMsrcEe2c1qM7hnKHGg" points="[6, 9, 0, -1]$[0, 5, -6, -5]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_xT8BkMrcEe2c1qM7hnKHGg" type="4001" source="_xTxCdcrcEe2c1qM7hnKHGg" target="_xTcSUMrcEe2c1qM7hnKHGg" roundedBendpointsRadius="5" routing="Rectilinear">
+    <styles xmi:type="notation:FontStyle" xmi:id="_xT8BkcrcEe2c1qM7hnKHGg" fontName=".AppleSystemUIFont"/>
+    <element xmi:type="esb:EsbLink" href="RecordDeliveryFaultSeq.esb#//@server/@children.0/@mediatorFlow/@children.0/@outputConnector/@outgoingLink"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_xT8BksrcEe2c1qM7hnKHGg" points="[-11, -2, 65, 8]$[-65, -9, 11, 1]"/>
+  </edges>
+</notation:Diagram>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="MustDeliverDemoEP" groupId="com.wso2.mpretries.mimain.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/MustDeliverDemoEP.xml</file>
+    </artifact>
+    <artifact name="MustDeliverDemoMS" groupId="com.wso2.mpretries.mimain.message-store" version="1.0.0" type="synapse/message-store" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/message-stores/MustDeliverDemoMS.xml</file>
+    </artifact>
+    <artifact name="MustDeliverDemoMP" groupId="com.wso2.mpretries.mimain.message-processors" version="1.0.0" type="synapse/message-processors" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/message-processors/MustDeliverDemoMP.xml</file>
+    </artifact>
+    <artifact name="MustDeliverDemoFaultSeq" groupId="com.wso2.mpretries.mimain.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/MustDeliverDemoFaultSeq.xml</file>
+    </artifact>
+    <artifact name="MustDeliverDemoSuccessSeq" groupId="com.wso2.mpretries.mimain.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/MustDeliverDemoSuccessSeq.xml</file>
+    </artifact>
+    <artifact name="MustDeliverDemoRetryMS" groupId="com.wso2.mpretries.mimain.message-store" version="1.0.0" type="synapse/message-store" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/message-stores/MustDeliverDemoRetryMS.xml</file>
+    </artifact>
+    <artifact name="MustDeliverDemoRetryMP" groupId="com.wso2.mpretries.mimain.message-processors" version="1.0.0" type="synapse/message-processors" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/message-processors/MustDeliverDemoRetryMP.xml</file>
+    </artifact>
+    <artifact name="MustDeliverDemoSeq" groupId="com.wso2.mpretries.mimain.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/MustDeliverDemoSeq.xml</file>
+    </artifact>
+    <artifact name="MustDeliverDemoAPI_1.0.0" groupId="com.wso2.mpretries.mimain.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/MustDeliverDemoAPI_1.0.0.xml</file>
+    </artifact>
+    <artifact name="MustDeliverDemoAPI_1.0.0_swagger" groupId="com.wso2.mpretries.mimain.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/MustDeliverDemoAPI_1.0.0_swagger.yaml</file>
+    </artifact>
+    <artifact name="MustDeliverDemoAPI_1.0.0_metadata" groupId="com.wso2.mpretries.mimain.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/MustDeliverDemoAPI_1.0.0_metadata.yaml</file>
+    </artifact>
+    <artifact name="MustDeliverDemoRetryFaultSeq" groupId="com.wso2.mpretries.mimain.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/MustDeliverDemoRetryFaultSeq.xml</file>
+    </artifact>
+    <artifact name="MustDeliverDemoMPDeactivateSeq" groupId="com.wso2.mpretries.mimain.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/MustDeliverDemoMPDeactivateSeq.xml</file>
+    </artifact>
+    <artifact name="MustDeliverDemoRetryMPDeactivateSeq" groupId="com.wso2.mpretries.mimain.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/MustDeliverDemoRetryMPDeactivateSeq.xml</file>
+    </artifact>
+    <artifact name="RecordDeliveryStatusSeq" groupId="com.wso2.mpretries.mimain.template" version="1.0.0" type="synapse/sequenceTemplate" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/templates/RecordDeliveryStatusSeq.xml</file>
+    </artifact>
+    <artifact name="RecordDeliveryFaultSeq" groupId="com.wso2.mpretries.mimain.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/RecordDeliveryFaultSeq.xml</file>
+    </artifact>
+</artifacts>

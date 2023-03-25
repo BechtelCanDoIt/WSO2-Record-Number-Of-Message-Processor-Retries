@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:esb="http:///org/wso2/integrationstudio/eclipse/gmf/esb" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmi:id="_nLaz0Mj3Ee2LnehmMklzbg" type="Esb" name="MustDeliverDemoAPI_1.0.0" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_nM-6EMj3Ee2LnehmMklzbg" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_nNCkcMj3Ee2LnehmMklzbg" type="7001">
+      <children xmi:type="notation:Shape" xmi:id="_nXObMMj3Ee2LnehmMklzbg" type="3668" fontName=".AppleSystemUIFont">
+        <children xmi:type="notation:BasicCompartment" xmi:id="_nXQQYMj3Ee2LnehmMklzbg" type="7044">
+          <children xmi:type="notation:Node" xmi:id="_nXpR8Mj3Ee2LnehmMklzbg" type="3669">
+            <styles xmi:type="notation:DescriptionStyle" xmi:id="_nXpR8cj3Ee2LnehmMklzbg"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_nXpR8sj3Ee2LnehmMklzbg" fontName=".AppleSystemUIFont"/>
+            <styles xmi:type="notation:LineStyle" xmi:id="_nXpR88j3Ee2LnehmMklzbg"/>
+            <element xmi:type="esb:APIResource" href="MustDeliverDemoAPI_1.0.0.esb#//@server/@children.0/@resources.0"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nXpR9Mj3Ee2LnehmMklzbg" width="300" height="400"/>
+          </children>
+        </children>
+        <element xmi:type="esb:SynapseAPI" href="MustDeliverDemoAPI_1.0.0.esb#//@server/@children.0"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nXObMcj3Ee2LnehmMklzbg" width="640" height="500"/>
+      </children>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_nM-6Ecj3Ee2LnehmMklzbg"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_nM-6Esj3Ee2LnehmMklzbg" fontName=".AppleSystemUIFont"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="_nM-6E8j3Ee2LnehmMklzbg"/>
+    <element xmi:type="esb:EsbServer" href="MustDeliverDemoAPI_1.0.0.esb#//@server"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nM-6FMj3Ee2LnehmMklzbg"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_nLba4Mj3Ee2LnehmMklzbg"/>
+  <element xmi:type="esb:EsbDiagram" href="MustDeliverDemoAPI_1.0.0.esb#/"/>
+</notation:Diagram>

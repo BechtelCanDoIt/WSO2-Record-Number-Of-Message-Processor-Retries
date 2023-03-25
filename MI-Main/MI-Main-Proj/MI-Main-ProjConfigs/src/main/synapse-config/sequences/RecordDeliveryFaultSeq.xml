@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="RecordDeliveryFaultSeq" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <log category="DEBUG" description="Emergency!!! Seperate fault to stop recursive even if DB is unreachable." level="full" separator=",">
+        <property name="DEBUG" value="Can Not Talk To The Data Service!"/>
+    </log>
+</sequence>

@@ -43,3 +43,6 @@ nbproject/
 # Log files
 *.log
 *.tmp
+
+# Project specific
+DB/

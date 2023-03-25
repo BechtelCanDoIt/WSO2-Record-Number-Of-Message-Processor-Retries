@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="MustDeliverDemoSeq" onError="MustDeliverDemoFaultSeq" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <enrich>
+        <source clone="true" type="body"/>
+        <target property="payload" type="property"/>
+    </enrich>
+    <log level="custom" separator=",">
+        <property name="Seq_Nam" value="MustDeliverDemoSeq"/>
+        <property name="Loc" value="Enter Seq"/>
+        <property expression="get-property('MessageID')" name="MessageID"/>
+        <property expression="get-property('payload')" name="payload"/>
+        <property name="MSG" value="Adding Payload to MustDeliverDemoMS."/>
+    </log>
+    <property name="mp_name" scope="default" type="STRING" value="MustDeliverDemoMP"/>
+    <property name="mp_isDeactivated" scope="default" type="STRING" value="false"/>
+    <store messageStore="MustDeliverDemoMS"/>
+    <log level="custom" separator=",">
+        <property name="Seq_Nam" value="MustDeliverDemoSeq"/>
+        <property name="Loc" value="Exit Seq"/>
+    </log>
+    <respond/>
+</sequence>

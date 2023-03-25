@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="BackEndSeq" groupId="com.wso2.mpretries.backend.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/BackEndSeq.xml</file>
+    </artifact>
+    <artifact name="BackEndApi_1.0.0" groupId="com.wso2.mpretries.backend.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/BackEndApi_1.0.0.xml</file>
+    </artifact>
+    <artifact name="BackEndApi_1.0.0_swagger" groupId="com.wso2.mpretries.backend.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/BackEndApi_1.0.0_swagger.yaml</file>
+    </artifact>
+    <artifact name="BackEndApi_1.0.0_metadata" groupId="com.wso2.mpretries.backend.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/BackEndApi_1.0.0_metadata.yaml</file>
+    </artifact>
+</artifacts>

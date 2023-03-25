@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/process" name="MustDeliverDemoAPI" version="1.0.0" version-type="context" xmlns="http://ws.apache.org/ns/synapse">
+    <resource faultSequence="MustDeliverDemoFaultSeq" inSequence="MustDeliverDemoSeq" methods="POST">
+        <outSequence/>
+    </resource>
+</api>

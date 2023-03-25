@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="MustDeliverDemoRetryFaultSeq" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <log level="custom" separator=",">
+        <property name="Seq_Nam" value="MustDeliverDemoRetryFaultSeq"/>
+        <property name="Loc" value="Enter Seq"/>
+        <property expression="get-property('MessageID')" name="MessageID"/>
+    </log>
+    <sequence key="MustDeliverDemoFaultSeq"/>
+    <log level="custom" separator=",">
+        <property name="Seq_Nam" value="MustDeliverDemoRetryFaultSeq"/>
+        <property name="Loc" value="Exit Seq"/>
+    </log>
+</sequence>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="MustDeliverDemoRetryMPDeactivateSeq" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <log level="custom" separator=",">
+        <property name="Seq_Nam" value="MustDeliverDemoRetryMPDeactiveSeq"/>
+        <property name="Loc" value="Enter Seq"/>
+        <property expression="get-property('MessageID')" name="MessageID"/>
+    </log>
+    <property name="mp_name" scope="default" type="STRING" value="MustDeliverDemoRetryMP"/>
+    <property name="mp_isDeactivated" scope="default" type="STRING" value="true"/>
+    <sequence key="MustDeliverDemoFaultSeq"/>
+    <log level="custom" separator=",">
+        <property name="Seq_Nam" value="MustDeliverDemoRetryMPDeactiveSeq"/>
+        <property name="Loc" value="Exit Seq"/>
+    </log>
+</sequence>

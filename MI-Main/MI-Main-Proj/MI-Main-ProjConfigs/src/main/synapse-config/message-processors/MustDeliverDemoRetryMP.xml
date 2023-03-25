@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<messageProcessor class="org.apache.synapse.message.processor.impl.failover.FailoverScheduledMessageForwardingProcessor" messageStore="MustDeliverDemoRetryMS" name="MustDeliverDemoRetryMP" xmlns="http://ws.apache.org/ns/synapse">
+    <parameter name="client.retry.interval">4000</parameter>
+    <parameter name="max.delivery.attempts">1</parameter>
+    <parameter name="member.count">1</parameter>
+    <parameter name="message.processor.fault.sequence">MustDeliverDemoRetryFaultSeq</parameter>
+    <parameter name="max.delivery.drop">Enabled</parameter>
+    <parameter name="interval">4000</parameter>
+    <parameter name="message.processor.deactivate.sequence">MustDeliverDemoRetryMPDeactivateSeq</parameter>
+    <parameter name="is.active">true</parameter>
+    <parameter name="message.target.store.name">MustDeliverDemoMS</parameter>
+</messageProcessor>
